@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Fall intake kab hota hai?",
+    "expected": "April to June (classes start in September)",
+    "source": "International-Students-Final-Handbook.pdf"
+  },
+  {
+    "question": "Semester exchange ke liye minimum CGPA kitna chahiye?",
+    "expected": "2.5",
+    "source": "International-Students-Final-Handbook.pdf"
+  },
+  {
+    "question": "Global Pathway ke liye CGPA requirement kya hai?",
+    "expected": "3.0 and proficiency in English",
+    "source": "International-Students-Final-Handbook.pdf"
+  },
+  {
+    "question": "BS Computer Science ki total fee kitni hai?",
+    "expected": "1,520,000",
+    "source": "UG-Fee-Structure.pdf"
+  },
+  {
+    "question": "Attendance kitni compulsory hai?",
+    "expected": "80% compulsory, dropped below 75%",
+    "source": "International-Students-Final-Handbook.pdf"
+  }
+]
