@@ -56,8 +56,7 @@ def get_collection():
 
 @st.cache_resource
 def connect_gemini():
-    return genai.Client(api_key=api_key)
-
+    return genai.Client(api_key=api_key, http_options=types.HttpOptions(api_version="v1beta"))
 
 client = connect_gemini()
 
