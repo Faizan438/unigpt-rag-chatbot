@@ -16,6 +16,13 @@ pdf_files = glob.glob(os.path.join(BASE_DIR, "*.pdf"))
 
 db = chromadb.PersistentClient(path=DB_PATH)
 col = db.get_or_create_collection(name="unigpt")
+if col.count() == 0:
+    import subprocess
+    import sys
+    st.write("Database khaali hai, ingest.py chala raha hun...")
+    subprocess.run([sys.executable, os.path.join(BASE_DIR, "ingest.py")], check=False)
+    col = db.get_or_create_collection(name="unigpt")
+    st.write(f"Ingest ke baad chunks: {col.count()}")
 
 st.title("🎓 UniGPT Chatbot")
 
